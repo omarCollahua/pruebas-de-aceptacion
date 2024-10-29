@@ -1,0 +1,11 @@
+Feature: US02 - Autenticación de Usuario
+    Scenario: Acceso a la sección "Iniciar Sesión"
+    Given que el usuario se encuentra en la página principal de la plataforma, 
+    When el usuario haga clic en la sección "Iniciar Sesión", 
+    Then el usuario accede al formulario de inicio de sesión.
+
+    Scenario: Autenticación con datos válidos
+    Given que el usuario se encuentra en la ventana de inicio de sesión, 
+    When el usuario complete las casillas "Correo Electrónico" y "Contraseña" correctamente,
+    And haga clic en el botón "Iniciar Sesión", 
+    Then el usuario es autenticado y redirigido a su página de perfil.
