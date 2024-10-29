@@ -1,0 +1,11 @@
+Feature: US01 - Registro de Usuario
+  Scenario: Acceso a la sección "Registro de Usuario"
+  Given que el usuario se encuentra en la página principal de la plataforma,
+  When el usuario haga clic en la sección "Registro", 
+  Then el usuario accede al formulario de registro.
+
+Scenario: Registro del Usuario
+  Given que el usuario se encuentra en la sección "Registro",
+  When el usuario complete las casillas de "Nombre", "Correo Electrónico", "Contraseña" y "Confirmar Contraseña", 
+  And haga clic en el botón "Registrarse", 
+  Then el usuario recibe el mensaje de confirmación "Registro completado con éxito" y es redirigido a la página principal.
